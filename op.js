@@ -1,4 +1,4 @@
-//随机颜色的瀑布流加载
+//随机颜色的瀑布流加载  Random color waterfall stream loaded
 
 var uls =document.getElementsByClassName('ull');
 var toug=document.getElementsByClassName('toug')[0];
