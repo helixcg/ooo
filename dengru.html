@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;padding: 0px;
+	}
+	    body{
+	    	    font: 12px/150% Arial,Verdana;
+	    }
+	    a {
+	    	clear: both;
+	    	text-decoration: none;color: #666;
+	    	width: 127px;
+	    	margin-left: 38px;
+	    	margin-top: 12px;
+	    	border-right: 1px solid #f4f4f4;
+	    }
+	    a:hover{
+	    	color: red;font-weight: 600;
+	    }
+	    p{
+	    	text-align: -webkit-match-parent;
+	    	margin-top: 13px;
+	    	margin-left:47px; 
+	    	
+	    }
+	    li{
+	    	list-style: none;float: left;
+	    }
+	    ul{
+	    	margin-bottom: 20px
+	    }
+	    .clear{
+	    	clear:both;
+	    	overflow: hidden;
+	    }
+	    .show{display: block}
+		.black{display: none}
+	    .all{
+	    	height: 1080px;
+	    	margin: 10px auto;
+	    }
+		.mar{
+			width: 999px;height: 67px;
+			margin: 0 auto;
+			
+		}
+		.logo{
+			width:169px;height: 47px; 
+			background: url(images/jl.png) no-repeat 0 0px;
+			float: left;
+		}
+		.dr{
+			width: 111px;height: 42px;
+			margin: 8px 0 0 10px;
+			background: url(images/huanyingdengru.png) no-repeat 0 0px;
+			float: left;
+		}
+		.zhu{
+			clear: both;
+			margin: 0 auto;
+			width: 100%;height: 476px;
+			top: 60px;
+			background: #e93854
+		}
+		.aaaa{
+			width: 991px;height: 475px;
+			margin: 0 auto;
+			background: url(images/bj.png) no-repeat 0 0px;
+		}
+		.login{
+		    float: right;
+		    top: 40px;
+		    position: relative;
+		    z-index: 4;
+		    background: #fff;
+		    overflow: visible;
+		    width: 322px;
+		    margin: 0;
+		    padding: 0;
+		    display: block;
+
+
+		}
+		   .logintab1 {
+		    height: 35px;
+		    margin-top: 15px;
+		    font-size: 18px;
+		    font-family: "microsoft yahei";
+		    text-align: center;
+		    border-bottom: 1px solid #f4f4f4;
+		    background: #fff;
+		    display: block;
+		    float: left;
+		    width: 160px;
+		    position: relative;
+		}
+		.logintab2 {
+		    height: 35px;
+		    margin-top: 15px;
+		    font-size: 18px;
+		    font-family: "microsoft yahei";
+		    text-align: center;
+		    border-bottom: 1px solid #f4f4f4;
+		    background: #fff;
+		    display: block;
+		    float: left;
+		    width: 160px;
+		    position: relative;
+		}
+		.ss{
+			margin-top:40px;
+			margin-left: 70px;
+			 border: 1px solid #f4f4f4;
+		    padding: 8px;
+		    width: 155px;
+		    float: left;
+		  
+		    /*position: absolute;*/
+		}
+		#yin{
+			display: none;
+			margin-top:40px;
+			float: right;
+
+		}
+		.cha{
+
+			margin:10px auto;
+			width: 280px;height: 30px;
+			background: url(images/fgu-1_03.jpg) no-repeat;
+		}
+		.gaoo{
+			width: 259px;height: 20px;margin-top:9px;margin-left: 26px;
+			float: left;
+			background: #fff6d2;border: 1px solid #ffe57d;
+		}
+		.jingao{
+			margin-top: 5px;margin-left: 5px;
+			width: 13px;height: 16px;
+			background: url(images/tt.png) no-repeat -104px -23px;
+			float: left;
+		}
+		.you{
+			margin-top: 13px;float: left;
+		}
+		.login-label {
+		    z-index: 3;
+		   margin-left: 26px;
+		    width: 38px;
+		    height: 38px;
+		    border: 1px solid #bdbdbd;
+		    float: left;
+		    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016/i/pwd-icons-new.png) no-repeat;
+         }
+		.itxt {
+			    line-height: 18px;
+			    height: 16px;
+			    border: border: 1px solid #bdbdbd;;
+			    padding: 10px 28px 10px 20px;
+			    width: 170px;
+			    float: none;
+			    overflow: hidden;
+			    font-size: 14px;
+			    font-family: '\5b8b\4f53';
+			}
+			.mi{
+				float: left;
+				margin-top: 20px;
+			}
+			.safe{
+				float: left;width: 300px;
+				margin-left: 26px;
+				margin-top: 20px;
+			}
+			.forget{
+				width: 85px;height: 14px;float: right;
+			}
+			.login-btn{
+				float: left;
+				margin-left: 23px;
+				margin-top: 8px;
+				margin-bottom: 36px;
+				border: 1px solid #e85356;
+			    display: block;
+			    width: 260px;
+			    background: #e4393c;
+			    height: 31px;
+			    line-height: 31px;
+			    color: #fff;
+			    font-size: 20px;
+			    font-family: 'Microsoft YaHei';
+
+			}
+			.extra-r{
+				float: right
+			}
+			.regist-link{
+				float: right;
+				margin-left: 40px;
+				background: url(images/tt.png) no-repeat -104px -73px;
+			}
+			.coagent{
+				clear: both;
+				height: 40px;
+			}
+
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="mar">
+			<div class="logo"></div>
+			<div class="dr"></div>
+		</div>
+		<div class="zhu" >
+			<div class="aaaa">
+				<div class="login">
+					<div class="logintab1">
+						<a >
+                            扫码登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>
+					</div>
+					<div class="logintab2">
+						<a >
+                            账户登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>
+					</div>
+					<div class="sss" >
+						<div >
+							 <img src="//qr.m.jd.com/show?appid=133&size=147&t=1479373672536" class="ss" >
+							 <img src="images/eees.png" id="yin" style="margin-top: 40px">
+							</div>
+						<div class="clear"></div>
+						<p>打开新版手机京东，扫描二维码 &nbsp|&nbsp&nbsp使用帮助</p>	
+                       <div class="cha" style="margin-top: 30px"></div>
+            		</div>
+					<div class="zz black">
+						<div class="gao black">
+							<div class="jingao"></div>
+							<p style="font-size: 10px margin:0px 0px;margin-top: 4px;margin-left: 3px">公共场所不建议自动登录，以防账号丢失</p>
+						</div>
+						<div class="you">
+							<label for="loginname" class="login-label name-label"></label>
+								<input id="loginname" type="text" class="itxt" name="loginname" tabindex="1" autocomplete="off" placeholder="邮箱/用户名/已验证手机">
+						</div>
+						<div class="mi">
+							<label class="login-label pwd-label" for="nloginpwd"></label>
+								<input type="password" id="nloginpwd" name="nloginpwd" class="itxt itxt-error" tabindex="2" autocomplete="off" placeholder="密码">
+						</div>
+						<div class="safe">
+							<span>
+								<input id="autoLogin" type="checkbox" class="jdcheckbox">
+								<label for="">自动登录</label>
+							</span>
+							<span class="forget">
+                                 <a1 href="https://safe.jd.com/findPwd/index.action">忘记密码</a1>
+                            </span>
+						</div>
+						<button class="login-btn">
+							<p1 class="btn-entry" tabindex="6" style=" text-align: center;">登&nbsp;&nbsp;&nbsp;&nbsp;录</p1>
+						</button>
+						<div class="coagent" >
+	                       <ul>
+	                         <li>
+	                            <a href='//qq.jd.com/new/wangyin/login.action'
+	                            style="margin:0 10px">京东钱包</a>
+	                           <span class="line">|</span>
+	                         </li>
+	                         <li>
+	                           <a href='//qq.jd.com/new/qq/login.aspx' style="margin:0 10px">QQ</a>
+	                             <span class="line">|</span>
+	                          </li>
+	                          <li>
+	                            <a href='//qq.jd.com/new/wx/login.action' style="margin-left:0 10px">微信</a>
+	                          </li>
+	                          <li>
+					            
+					                <div class="regist-link"><a href="//reg.jd.com/reg/person?ReturnUrl=http%3A%2F%2Fwww.jd.com"
+					                style="margin-left:20px">立即注册</a></div>
+					            
+	                          </li>
+	                       </ul>
+                        </div>
+
+
+					</div>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var logintab1 = document.getElementsByClassName('logintab1')[0]
+	var logintab2=document.getElementsByClassName('logintab2')[0]
+	var sss = document.getElementsByClassName('sss')[0]
+	var ss = document.getElementsByClassName('ss')[0]
+	var zz = document.getElementsByClassName('zz')[0]
+	
+		logintab1.onclick=function(){
+					return function () {
+							sss.className = "black";
+							zz.className = "black";
+						
+						sss.className = "show";
+						 ss.src="//qr.m.jd.com/show?appid=133&size=147&t=1479373672536";
+					}
+		}();
+		logintab2.onclick=function(){
+					return function () {
+							sss.className = "black";
+							zz.className = "black";
+						
+						zz.className = "show";
+						
+					}
+		}();
+</script>
+<script type="text/javascript">
+	var ss = document.getElementsByClassName('ss')[0]
+	var logintab1 =document.getElementsByClassName('logintab1')[0]
+	var yin=document.getElementById('yin')
+	var i =70,timer=null;
+
+	logintab1.onmouseover=function (){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			if (i<=1) {
+				i=1;
+         	clearInterval(timer);
+         }
+         i--;
+         ss.style.marginLeft=i+"px";
+         if (i<=1) {
+         	yin.removeAttribute("id");
+         }
+     },5);
+	}
+	ss.onmouseover=function (){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			if (i<=1) {
+				i=1;
+         	clearInterval(timer);
+         }
+         i--;
+         ss.style.marginLeft=i+"px";
+         if (i<=1) {
+         	yin.removeAttribute("id");
+         }
+     },5);
+	}
+	logintab1.onmouseout=function(){
+		clearInterval(timer);
+		yin.setAttribute("id","yin");
+		timer=setInterval(function(){
+			if (i>=70) {
+				i=70;
+         	clearInterval(timer);
+         }
+         i++;
+         ss.style.marginLeft=i+"px";
+     },2);
+	}
+	ss.onmouseout=function(){
+		clearInterval(timer);
+		yin.setAttribute("id","yin");
+		timer=setInterval(function(){
+			if (i>=70) {
+				i=70;
+         	clearInterval(timer);
+         }
+         i++;
+         ss.style.marginLeft=i+"px";
+     },2);
+	}
+</script>
+<script type="text/javascript">
+	var dian=document.getElementById("autoLogin")
+	var gao=document.getElementsByClassName('gao')[0]
+	var flag=true;
+	dian.onclick=function(){
+		if (flag==true) {
+			gao.className="gaoo";
+			flag=false;
+	    }else{
+				gao.className="black";
+				flag=true;
+		}
+	};
+</script>
+<script type="text/javascript">
+
+	var input=document.getElementsByTagName('input')
+	var dr=document.getElementsByClassName('login-btn')[0];
+	dr.onclick=function(){
+		var dates=new Date();
+		var userName=input[0].value;
+	    var password=input[1].value;
+		dates.setDate(dates.getDate()+13);
+		document.cookie=userName+"="+escape(password)+";expires="+dates;
+
+	}
+</script>
+</html>

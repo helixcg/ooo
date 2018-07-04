@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人注册</title>
+	<style type="text/css">
+		*{
+			margin :0px;padding: 0px;
+		}
+		a{
+			text-decoration: none;color: #333;
+		}
+		body, button, input {
+		    font-family: "Microsoft YaHei","Hiragino Sans GB";
+		}
+		body {
+		    font:Arial,Verdana,"\5b8b\4f53";
+		    color: #666;
+			margin:0 auto;
+		}
+		.black{display: none}
+		.txt{
+			 z-index: 2; line-height: 46px; 
+			 margin-left: 20px; margin-top: 1px; 
+			 font-size: 14px; font-family: &quot;Microsoft YaHei&quot;, &quot;H
+			 iragino Sans GB&quot;;
+			  color: rgb(204, 204, 204); 
+			  display: inline;
+		}
+		.logo{
+			width:169px;height: 47px; 
+			background: url(images/jl.png) no-repeat 0 0px;
+			float: left;
+			margin-top: 24px;
+		}
+		.all{
+			height: 980px;
+			margin:0 auto;
+		}
+		.mar{
+		    width: 1210px;
+			height: 97px;
+		    margin:0 auto;
+		    background: url(http://misc.360buyimg.com/user/reg/1.0.0/css/i/headbg.jpg) repeat-x left bottom;
+	    }
+		.dr{
+		    float: left;
+		    height: 34px;
+		    line-height: 34px;
+		    font-size: 18px;
+		    color: #000;
+		    border-left: solid 1px #bbb;
+		    margin-left: 25px;
+		    padding-left: 25px;
+		    margin-top: 34px;
+		    font-family: "Microsoft YaHei","Hiragino Sans GB";
+		}
+		.yqr{
+			float: right;margin-top: 47px;
+			text-decoration: none;
+			color: #999;
+
+		}
+		.main{
+			width: 830px;height: 623px; 
+			margin:50px auto;
+		}
+		.form-item{
+			width: 430px;height: 52px;
+			border: solid 1px #ddd;
+			margin: 0 5px;
+		}
+		.xiaoyin{
+			height: 20px;width: 438px;
+			font-size: 13px;color: #ccc;
+		}
+		.ajs{
+			margin-left: 36px;
+			font-size: 13px;color: #ccc;
+		}
+		.xxx{
+			display: none;
+			margin-left: 36px;
+			font-size: 13px;color: #ccc;
+		}
+		input{
+			border: solid 0px #fff;
+			width: 178px;height: 46px;
+			outline:medium;
+		}
+		.haoma{
+			/*display: block;*/
+			float: left;
+			text-align:center;
+			line-height: 52px;
+			width: 128px;height: 52px;
+			border-right: solid 1px #ddd;	
+		}
+		.dingwei{
+			position: absolute;
+		}
+		.asd{
+			display: none;
+			background: #fff;
+			width: 168px;height: 366px;
+		    top: 53px;
+		    left: -139px;
+			position: absolute;
+			overflow :auto;
+		}
+		.asdd{
+			background: #fff;
+			width: 168px;height: 366px;
+		    top: 53px;
+		    left: -139px;
+			position: absolute;
+			overflow :auto;
+		}
+		.phone-suggest li {
+		    height: 40px;
+		    width: 125px;
+		    line-height: 40px;
+		    padding-left: 20px;
+		    list-style: none;
+		    border-left: 1px solid #ccc;
+		    border-right: 1px solid #ccc;
+		}
+		.yzm{
+			float: right;
+			margin-top: 11px;
+		}
+		#getPhoneCode{
+		   margin-left: 17px;
+		    margin-top: 3px;
+		    width: 110px;
+		    height: 46px;
+		    border: none;
+		    background: #f2f2f2;
+		    color: #333;
+		    padding: 0;
+		}
+		#code  
+            {  
+                font-family:Arial;  
+                font-style:italic;  
+                font-weight:bold;  
+                border:0;  
+                background: #ccc;
+                letter-spacing:2px;  
+                color:blue;  
+            } 
+            #dx{
+            	width: 15px;
+			    height: 15px;
+			    vertical-align: text-top;
+			    margin:0px 29px;
+            }
+            #dx,a{
+            	color:blue;
+            }
+            .form-item-valid{
+            	font-size: 12px;
+            }
+            .btnregister{
+            	margin-top: 32px;
+            	width: 433px;
+			    height: 54px;
+			    color: #fff;
+			    background: #e22;
+			    border: 0;
+			    font-size: 16px;
+			    font-family: "Microsoft YaHei","Hiragino Sans GB";
+            }
+            .tabss{
+            	margin:0 auto;
+            	position: absolute;
+            }
+            
+            #you{
+            	position: absolute;
+            	top: 6px;
+            	left: 439px;
+			    margin-left: 84px;
+			    height: 540px;
+			    padding-left: 90px;
+			    border-left: solid 1px #e6e6e6;
+
+            }
+            .reg-other .phone-fast-reg {
+			    background: url(http://misc.360buyimg.com/user/reg/1.0.0/widget/personal-reg/i/phone.jpg) no-repeat;
+			    width: 213px;
+			    height: 270px;
+             }
+             .company-reg{
+             	font-size: 14px;
+             	width: 160px;
+			    height: 60px;
+			    margin-top: 50px;
+			    border-bottom: solid 1px #ddd;
+			    margin-left: 30px;
+
+             }
+             .i-company{
+             	 width: 30px;height: 29px;margin-right: 15px;
+             	 background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat 0 -50px;
+             	 float: left;
+             }
+             .inter-cust{
+             	margin: 13px 0 0 23px; 
+             }
+             .i-global{
+             	display: inline-block;
+			    width: 30px;
+			    height: 30px;
+			    vertical-align: text-bottom;
+			    margin-right: 15px;
+			    float: left;
+			    margin-top: 7px;
+			    background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png) no-repeat -50px -50px;
+             }
+            #you a:hover{
+	    	color: #000;font-weight: 600;
+	    }
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="mar">
+			<div class="logo"></div>
+			<div class="dr">欢 迎 注 册</div>
+			<div class="yqr">
+			    已有账号<a href="dengru.html"> 请登录</a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="tabss">
+                <div class="form-item">
+                    <label> &nbsp用　户　名</label>
+                    <input type="text" class="field"  placeholder="     您的账户名和登录名" >
+                </div>
+	               <div class="xiaoyin">
+	                <div class="xxx" name="hp">
+	                		支持中文、字母、数字、“-”“_”的组合，4-20个字符
+	                </div>
+	               </div>
+                <div class="form-item">
+                    <label> &nbsp设 置 密 码</label>
+                    <input type="password" class="field" placeholder="     建议至少使用两种字符组合 ">
+                 </div>   
+	                <div class="xiaoyin">
+	                <div class="xxx" name="hp">
+	                	建议使用字母、数字和符号两种及以上的组合，6-20个字符"
+	                </div>
+	               </div>
+                <div class="form-item">
+                    <label> &nbsp确 认 密 码</label>
+                    <input type="password" name="pwdRepeat" placeholder="      请再次输入密码 ">
+                </div>
+	                <div class="xiaoyin">
+	                <div class="xxx" name="hp">
+	                		请再次输入密码输入
+	                </div>
+	               </div>
+	             <div class="form-item">
+                    <div  class="haoma"><label>中国 +86</label></div> 
+                    <label  class="dingwei">
+	                    <div class="asd">
+	                    	<ul class="suggest-container phone-suggest" style="display: block;"><li item_id="0086" class="selected"><div class="value">中国 +86</div></li><li item_id="0886" class=""><div class="value">台湾 +886</div></li><li item_id="0852" class=""><div class="value">香港 +852</div></li><li item_id="0060" class=""><div class="value">马来西亚 +60</div></li><li item_id="0065" class=""><div class="value">新加坡 +65</div></li><li item_id="0081" class="current"><div class="value">日本 +81</div></li><li item_id="0082" class=""><div class="value">韩国 +82</div></li><li item_id="0001" class=""><div class="value">美国 +1</div></li><li item_id="0001" class=""><div class="value">加拿大 +1</div></li><li item_id="0061" class=""><div class="value">澳大利亚 +61</div></li><li item_id="0064" class=""><div class="value">新西兰 +64</div></li><li item_id="0971" class=""><div class="value">阿联酋 +971</div></li><li item_id="0244" class=""><div class="value">安哥拉 +244</div></li><li item_id="0853" class=""><div class="value">澳门 +853</div></li><li item_id="0055" class=""><div class="value">巴西 +55</div></li><li item_id="0045" class=""><div class="value">丹麦 +45</div></li><li item_id="0049" class=""><div class="value">德国 +49</div></li><li item_id="0007" class=""><div class="value">俄罗斯 +7</div></li><li item_id="0033" class=""><div class="value">法国 +33</div></li><li item_id="0063" class=""><div class="value">菲律宾 +63</div></li><li item_id="0358" class=""><div class="value">芬兰 +358</div></li><li item_id="0031" class=""><div class="value">荷兰 +31</div></li><li item_id="0420" class=""><div class="value">捷克 +420</div></li><li item_id="0041" class=""><div class="value">瑞士 +41</div></li><li item_id="0046" class=""><div class="value">瑞典 +46</div></li><li item_id="0066" class=""><div class="value">泰国 +66</div></li><li item_id="0058" class=""><div class="value">委内瑞拉 +58</div></li><li item_id="0034" class=""><div class="value">西班牙 +34</div></li><li item_id="0039" class=""><div class="value">意大利 +39</div></li><li item_id="0091" class=""><div class="value">印度 +91</div></li><li item_id="0062" class=""><div class="value">印度尼西亚 +62</div></li><li item_id="0044" class=""><div class="value">英国 +44</div></li><li item_id="0084" class="suggest-li-last"><div class="value">越南 +84</div></li></ul>
+	                    </div>
+                    </label>
+                    <input type="password" name="phone" placeholder="      建议使用常用手机 ">
+                </div>
+	                <div class="xiaoyin">
+	                <div class="xxx" name="hp">
+	                		完成验证后，可以使用该手机登录和找回密码
+	                </div>
+	               </div>  
+                
+                        <div class="form-item">
+	                            <label> &nbsp验 证 码</label>
+	                            <input type="text" name="email" class="field "  placeholder="      请输入验证码" onclick = "validate()">
+	                             <input type = "button" id="code" onclick="createCode()"/>  
+	                       <!--  <ul class="suggest-containert">
+		                        <li class="">
+		                        	<div class="value">@qq.com</div>
+		                        </li>
+		                        <li class="">
+		                        	<div class="value">@163.com</div>
+		                        </li>
+		                        <li class="">
+		                        	<div class="value">@126.com</div>
+		                        </li>
+		                        <li class="">
+		                        	<div class="value">@Sina.com</div>
+		                        </li>
+		                        <li class="">
+		                       	 <div class="value">@Sohu.com</div>
+		                        </li>
+		                        <li class="suggest-li-last ">
+		                      	  <div class="value">@Gmail.com</div>
+		                        </li>
+	                        </ul> -->
+                        </div>
+                        <div class="xiaoyin">
+					       <div class="xxx" name="hp" style="margin-top: 7px;">
+					                		看不清？ 点击图片更换验证码
+				         </div>
+					    </div>  
+                
+                <div class="form-item">
+                    <label> &nbsp手 机 验 证 码</label>
+                    <input type="password" name="phonem" placeholder="      请输入手机验证码 ">
+                    <button id="getPhoneCode" class="btn-phonecode" type="button">获取验证码</button>
+                </div>
+                
+	                <div class="xiaoyin">
+	                <div class="xxx" name="hp">
+	                		请再次输入密码输入
+	                </div>
+	               </div>
+	            <div class="xieyi">
+	            	<div class="form-item-valid">
+	            	   <input type="checkbox" checked="" id="dx">我已阅读并同意
+	            	   <a href="" id="protocol">《京东用户注册协议》</a> 
+	            	</div>
+	            </div>
+	            <div>
+                    <button type="submit" class="btnregister">立即注册</button>
+                </div>   
+                <div class="qing"></div>
+                <div class="you" id="you" style="float: right;">
+			        <div id="form-company" class="reg-other">
+	                    <div class="phone-fast-reg">
+	                    </div>
+	                    <div class="company-reg">
+		                    <a href="" target="_blank">
+		                        <div class="i-company"></div>
+		                        <span style="vertical-align: middle;">企业用户注册</span>
+		                    </a>
+	                    </div>
+	                    <div class="inter-cust">
+		                    <a href="" target="_blank">
+		                        <div class="i-global"></div>
+		                        <span style="vertical-align: middle;">INTERNATIONAL<br> CUSTOMERS</span>
+		                    </a>
+	                    </div>
+	                </div>
+		        </div>
+		    </div>
+
+	     </div>
+	</div>
+</body>
+<script type="text/javascript">
+	var inputs=document.getElementsByTagName('input')
+	var dd=document.getElementsByName('hp')
+	
+
+		for (var i = 0; i < dd.length; i++) {
+				inputs[i].onclick=function(){
+					for (var z = 0; z < dd.length; z++) {
+						if (inputs[z]==this) {
+							dd[z].className="ajs";
+						}else{
+							dd[z].className="xxx"
+						}
+					}
+				}
+			}
+</script>
+<script type="text/javascript">
+	var haoma =document.getElementsByClassName('haoma')[0]
+	var asd =document.getElementsByClassName('asd')[0]
+	var yzm=document.getElementsByClassName('yzm')[0]
+	var  phonesuggest=document.getElementsByClassName('phone-suggest ')[0]
+	var phone=phonesuggest.getElementsByTagName('li')
+	haoma.onclick=function(){
+		asd.className="asdd";
+	}
+	for (var i = 0; i < phone.length; i++) {
+		phone[i].onclick=function(){
+		var asdd =document.getElementsByClassName('asdd')[0];
+		var phoneno=this.getElementsByClassName('value')[0]
+		haoma.innerHTML=phoneno.innerHTML;
+		asdd.className="black";
+	  }
+	}
+	window.onload = function createCode(){  
+     code = "";   
+     var codeLength = 4;  
+     var checkCode = document.getElementById("code");   
+     var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+     'S','T','U','V','W','X','Y','Z');
+     for(var i = 0; i < codeLength; i++) {
+        var index = Math.floor(Math.random()*36);  
+        code += random[index]; 
+    }  
+    checkCode.value = code;
+    }
+</script>
+<script type="text/javascript">
+    var code ;
+	var inputs=document.getElementsByTagName('input');
+	var formitems=document.getElementsByClassName('form-item')
+	inputs[0].onblur=function(){
+	var userName=/^[a-z0-9](\w){2,14}[a-z0-9]/g;
+	var val=inputs[0].value;
+	var flag=userName.test(val);
+	if(flag){
+			formitems[0].style.border="1px solid #ccc";
+		}else{
+			formitems[0].style.border="1px solid red";
+		}
+	}
+	inputs[1].onblur=function(){
+	var userName=/^(.){6,20}/g;
+	var val=inputs[1].value;
+	var flag=userName.test(val);
+	if(flag){
+			formitems[1].style.border="1px solid #ccc";
+		}else{
+			formitems[1].style.border="1px solid red";
+		}
+	}	
+	inputs[2].onblur=function(){
+	var val=inputs[2].value;
+	if(val==inputs[1].value){
+			formitems[2].style.border="1px solid #ccc";
+		}else{
+			formitems[2].style.border="1px solid red";
+		}
+	}
+	inputs[3].onblur=function(){
+	var userName=/^(\d){11}/g;
+	var val=inputs[3].value;
+	var flag=userName.test(val);
+	if(flag){
+			formitems[3].style.border="1px solid #ccc";
+		}else{
+			formitems[3].style.border="1px solid red";
+		}
+	}
+     function createCode(){  
+     code = "";   
+     var codeLength = 4;  
+     var checkCode = document.getElementById("code");   
+     var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',  
+     'S','T','U','V','W','X','Y','Z');
+     for(var i = 0; i < codeLength; i++) {
+        var index = Math.floor(Math.random()*36);  
+        code += random[index+"&nbsp;$nbsp"]; 
+    }  
+    checkCode.value = code;
+    }
+	inputs[4].onblur=function(){
+		var inputCode =inputs[4].value.toUpperCase();      
+    if(inputCode.length <= 0) {
+         formitems[4].style.border="1px solid red";
+    }         
+    else if(inputCode != code ) {   
+        formitems[4].style.border="1px solid red"; 
+        createCode();
+        inputs[4].value = "";
+    }         
+    else { 
+        formitems[4].style.border="1px solid #ccc";
+    }
+	}
+</script>
+</html>
